@@ -3,6 +3,14 @@ GET PATH TO THE THEME FOLDER :
 1. echo get_template_directory_uri()
 2. bloginfo('template_directory');
 
+Custom menu : 
+
+1. register_nav_menus()
+2. wp_nav_menu()
+
+the_title();
+
+
 GITHUB : 
 
 or create a new repository on the command line

@@ -1,4 +1,14 @@
+@import 'base/reset';
+@import 'base/typography';
+
 @import 'abstracts/_variables';
 
-
 @import 'pages/home';
+
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/carousel';
+@import 'components/slider';
+@import 'components/blog';
