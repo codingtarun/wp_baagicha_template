@@ -1,0 +1,19 @@
+GET PATH TO THE THEME FOLDER : 
+
+1. echo get_template_directory_uri()
+2. bloginfo('template_directory');
+
+GITHUB : 
+
+or create a new repository on the command line
+echo "# wp_baagicha_template" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/codingtarun/wp_baagicha_template.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/codingtarun/wp_baagicha_template.git
+git branch -M main
+git push -u origin main
