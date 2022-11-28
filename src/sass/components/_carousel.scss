@@ -1,3 +1,31 @@
-#hero {}
+#hero {
+    & .hero_slider {
+        & .hero_slider--box {
+            position: relative;
 
-.hero_slider {}
+            & img {}
+
+            & a:link,
+            & a:visited,
+            & a:active {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+                display: block;
+                width: 100%;
+                background-color: rgba($colorBlack , 0.5);
+                text-decoration: none;
+                color: $colorWhite;
+                padding: 2rem 2rem;
+                text-align: center;
+                font-size: $fontSizeSecondaryHeading;
+
+                @media (max-width: 767.98px) {
+                    font-size: $fontSizeSecondaryHeadingMobile;
+                    padding: .5rem 1rem;
+                }
+            }
+        }
+    }
+}

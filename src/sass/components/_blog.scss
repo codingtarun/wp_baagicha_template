@@ -1,29 +1,65 @@
 #blog {
     width: 100%;
-    background-color: rgb(238, 238, 238);
-    padding: 5rem 2rem;
+    padding: 1rem 1rem;
+    background-color: $colorOffWhite;
 
     & .blog_slider {
-        border: 1px solid red;
+
 
         & .blog_slider--box {
-            border: 1px solid blue;
+            margin: 0 .5rem;
+
+
+            & .img--box {
+                overflow: hidden;
+
+            }
+
+            & a:link,
+            & a:visited,
+            & a:active {
+                display: block;
+                cursor: pointer;
+                text-decoration: none;
+                color: $colorBlack;
+                padding-left: 1rem;
+                border-left: 1px solid rgba($colorPrimary, 0.3);
+
+                & h2 {
+                    font-size: $fontSizeSecondaryHeading;
+                    text-align: justify;
+                    margin-top: .5rem;
+
+                    @media (max-width: 767.98px) {
+                        font-size: $fontSizeSecondaryHeadingMobile;
+                    }
+                }
+
+                & p {
+                    font-size: $fontSizeParagraph;
+                    text-align: justify;
+
+                    @media (max-width: 767.98px) {
+                        font-size: $fontSizeParagraphMobile;
+                    }
+                }
+            }
         }
     }
 
     & h2 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     & button.slick-arrow {
-        background-color: rgba($colorPrimary, 0.5);
+        background-color: rgba($colorPrimary, 0.8);
         height: 100%;
     }
 
     & button.slick-prev.slick-arrow {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
-        color: red;
+        color: $colorOffWhite;
     }
 
     & button.slick-next.slick-arrow {
@@ -31,3 +67,18 @@
         border-bottom-right-radius: 10px;
     }
 }
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {}

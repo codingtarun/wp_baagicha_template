@@ -10,6 +10,9 @@ Custom menu :
 
 the_title();
 
+the_content();
+get_the_content();
+
 
 GITHUB : 
 

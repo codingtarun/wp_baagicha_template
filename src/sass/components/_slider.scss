@@ -5,10 +5,7 @@
         margin: 5px 5px;
     }
 
-    & .slick-slider {
-        width: 90%;
-        margin: 0 auto;
-    }
+    & .slick-slider {}
 
     @media (max-width: 576px) {
         & .slick-slider {
@@ -36,16 +33,19 @@
         }
 
         & h2 {
-            font-size: 1rem;
-            font-weight: bolder;
+            font-size: $fontSizeSecondaryHeading;
             color: $colorBlack;
             padding: 1px 3px;
+
+            @media (max-width: 767.98px) {
+                font-size: $fontSizeSecondaryHeadingMobile;
+            }
 
         }
     }
 
     & button.slick-arrow {
-        background-color: rgba($colorPrimary, 0.5);
+        background-color: rgba($colorOffWhite, 0.5);
         height: 100%;
     }
 
