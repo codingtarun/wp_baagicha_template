@@ -1,0 +1,36 @@
+.slick-slider {
+
+
+    & button.slick-arrow {
+        height: 100%;
+        width: 4rem;
+        //animation-name: scaleUpDown;
+        //animation-duration: 3s;
+    }
+
+    & button.slick-prev {
+        left: -3rem;
+        z-index: 100 !important;
+
+        &::before {
+            font-size: 3rem;
+            color: gray;
+        }
+
+        /*box-shadow: none;
+        background-image: url(https://images.yourstory.com/assets/icons/ic_brands_next_arrow.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        right: -3.2rem;*/
+    }
+
+    & button.slick-next {
+        right: -3rem;
+
+        &::before {
+            font-size: 3rem;
+            color: gray;
+        }
+    }
+}

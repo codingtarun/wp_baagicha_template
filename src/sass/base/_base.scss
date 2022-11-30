@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 200%; //Default font size : 14px -> 14px / 16px * 100 = 87.5; -> 14px = 1rem
+
+    @include respond(xl-min) {
+        font-size: 20%;
+    }
+
+    @include respond(xs) {
+        font-size: 10%;
+    }
+
+    @include respond(sm) {
+        font-size: 100%;
+    }
+
+    @include respond(md) {
+        font-size: 50%;
+    }
+
+    @include respond(lg) {
+        font-size: 120%;
+    }
+
+    @include respond(xl) {
+        font-size: 20%;
+    }
+
+
+}
+
+body {}

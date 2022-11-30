@@ -1,84 +1,57 @@
 #blog {
-    width: 100%;
-    padding: 1rem 1rem;
-    background-color: $colorOffWhite;
+    background: radial-gradient(rgb(229, 220, 220) 5%, transparent 10%) 0px 0px / 20px 20px, radial-gradient(rgba(220, 220, 220, 0.2) 0%, transparent 0%) 50px 50px rgba(220, 220, 220, 0.2);
+    padding: 5rem .5rem;
 
-    & .blog_slider {
+}
 
+.blog_slider {
+    width: 95%;
+    margin: 1rem auto;
 
-        & .blog_slider--box {
-            margin: 0 .5rem;
+    @include respond(sm) {
+        width: 100%;
+    }
 
+    &_box {
+        margin: .3rem 1rem;
 
-            & .img--box {
+        &--link {
+            text-decoration: none;
+
+            &-img {
                 overflow: hidden;
 
+                & img {
+                    transition: all 0.3s ease-in-out;
+                }
             }
 
-            & a:link,
-            & a:visited,
-            & a:active {
-                display: block;
-                cursor: pointer;
-                text-decoration: none;
-                color: $colorBlack;
-                padding-left: 1rem;
-                border-left: 1px solid rgba($colorPrimary, 0.3);
+            h3 {
+                padding: .5rem;
+                color: $colorSecondaryHeading;
+                font-size: $fontSizeTertiaryHeading;
+                margin: .1rem 0;
+            }
 
-                & h2 {
-                    font-size: $fontSizeSecondaryHeading;
-                    text-align: justify;
-                    margin-top: .5rem;
+            h2 {
+                padding: .5rem;
+                color: $colorPrimaryHeading;
+                font-size: $fontSizeSecondaryHeading;
+                margin: .1rem 0;
+                text-align: justify;
+            }
 
-                    @media (max-width: 767.98px) {
-                        font-size: $fontSizeSecondaryHeadingMobile;
-                    }
-                }
-
-                & p {
-                    font-size: $fontSizeParagraph;
-                    text-align: justify;
-
-                    @media (max-width: 767.98px) {
-                        font-size: $fontSizeParagraphMobile;
-                    }
-                }
+            p {
+                color: $colorTertiaryText;
+                font-size: $fontSizeParagraph;
+                text-align: justify;
+                padding: .5rem;
             }
         }
     }
 
-    & h2 {
-        font-size: 1rem;
+    &_box:hover &_box--link-img img {
+        transform: scale(1.12);
     }
 
-    & button.slick-arrow {
-        background-color: rgba($colorPrimary, 0.8);
-        height: 100%;
-    }
-
-    & button.slick-prev.slick-arrow {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        color: $colorOffWhite;
-    }
-
-    & button.slick-next.slick-arrow {
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
 }
-
-// X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {}
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {}
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {}
-
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {}

@@ -1,18 +1,18 @@
 
 $(document).ready(function () {
-    $('.hero_slider').slick({
-        dots: true,
+    $('.hero').slick({
+        dots: false,
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
     });
 
-    $('.varieties_slider').slick({
+    $('.slider').slick({
         dots: false,
-        centerMode: true,
-        infinite: true,
+        centerMode: false,
+        infinite: false,
         speed: 300,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 2,
         centerPadding: '60px',
         arrows: true,
@@ -28,15 +28,21 @@ $(document).ready(function () {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    centerMode: true,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    centerMode: true,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             }
             // You can unslick at a given breakpoint now by adding:
@@ -51,7 +57,7 @@ $(document).ready(function () {
         infinite: false,
         speed: 300,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 2,
         centerPadding: '60px',
         arrows: true,
         responsive: [
@@ -66,15 +72,21 @@ $(document).ready(function () {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    centerMode: true,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    centerMode: true,
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             }
             // You can unslick at a given breakpoint now by adding:

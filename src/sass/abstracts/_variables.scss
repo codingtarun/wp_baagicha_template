@@ -1,22 +1,22 @@
+// COLORS 
 $colorPrimary : #4CAF50;
-
 $colorWhite : #ffffff;
 $colorBlack : #000000;
-
 $colorOffWhite : rgb(238, 238, 238);
-
-
-$fontSizePrimaryHeading : 2rem;
-$fontSizePrimaryHeadingMobile : 1.8rem;
-
-$fontSizeSecondaryHeading : .9rem;
-$fontSizeSecondaryHeadingMobile : .75rem;
-$fontSizeSecondaryHeadingTablet : .8rem;
-
-$fontSizeTertiaryHeading : .8rem;
-
-$fontSizeParagraph : .7rem;
+$colorPrimaryHeading : rgba(0, 0, 0, 1);
+$colorSecondaryHeading : rgba(128, 128, 128, 0.9);
+$colorTertiaryText : rgba(0, 0, 0, .9);
+$colorNavbarLinks : rgba(0, 0, 0, 0.9);
+// FONT SIZE 
+$fontSizePrimaryHeading : 3rem;
+$fontSizePrimaryHeadingMobile : 3rem;
+$fontSizeSecondaryHeading : 1.2rem;
+$fontSizeSecondaryHeadingMobile : 2rem;
+$fontSizeSecondaryHeadingTablet : 2rem;
+$fontSizeTertiaryHeading : .9rem;
+$fontSizeParagraph : 1rem;
 $fontSizeParagraphMobile : .55rem;
 $fontSizeParagraphTablet : .6rem;
 
+// BORDER 
 $borderBottom : 1px solid rgba($colorOffWhite, 0.7);

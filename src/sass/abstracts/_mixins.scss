@@ -1,0 +1,59 @@
+// MEDIA QUERY MANAGER 
+/*
+0-600px : Phone
+600pxm- 900px : Tablet Port
+900px - 1200px : Tablet Land
+1200px - 1800px : Desktop/Laptop
+1800 + px : Big desktop
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint ==xs {
+        @media(max-width: 575.98px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint ==sm {
+        @media(max-width: 767.98px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint ==md {
+        @media(max-width: 991.98px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint ==lg {
+        @media(max-width: 1199.98px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint ==xl {
+        @media(max-width: 1399.98px) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint ==xl-min {
+        @media(min-width: 1400px) {
+            @content
+        }
+
+        ;
+    }
+
+}
