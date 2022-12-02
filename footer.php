@@ -26,6 +26,7 @@
         </div>
     </footer> -->
     <?php get_footer('scripts'); ?>
+    <?php wp_footer(); ?>
     </body>
 
     </html>
