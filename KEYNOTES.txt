@@ -52,7 +52,19 @@ To show post we need to create a file name 'single.php' which will be called by 
 For specific post type create 'single-postTypeName.php' file for single post page. 
 
 Highlighting active menu :  
+1. ul#custom_link_class
 
+Comments : 
+1. comments_template();
+2. style using classes declared
+
+Displaying Posts Category wise : 
+1. create 'category.php' page and use same code and 'index.php' page.
+
+Creating Dynamic title : 
+1. wp_title();
+2. bloginfo('name');
+3. bloginfo('description);
 
 
 GITHUB : 

@@ -1,0 +1,29 @@
+#all_categories {
+    display: block;
+    text-align: center;
+
+    & li.categories {
+        list-style: none;
+
+        & ul {
+
+            & li.cat-item {
+                list-style: none;
+                display: inline-block;
+
+                & a {
+                    text-decoration: none;
+                    color: rgba($colorBlack, 0.9);
+                    display: block;
+                    font-size: .8rem;
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                        color: rgba($colorPrimary, 0.9);
+                    }
+                }
+            }
+        }
+    }
+}

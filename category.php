@@ -44,7 +44,6 @@ the_post(); // use with the_content.
                     </a>
                 </div>
             <?php } ?>
-
             <div class="row mt-5">
                 <div class="col-12">
                     <?php echo wp_pagenavi(); ?>
