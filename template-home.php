@@ -68,23 +68,39 @@ get_header(); ?>
                 <h5 class="text-center heading_tertiary mb-5">Latest Updates | Blogs | Inverviews</h5>
                 <section id="blog_slider_container">
                     <div class="blog_slider">
-                        <?php for ($i = 0; $i < 10; $i++) { ?>
+                        <?php
+                        $args = array(
+                            'post_type' => 'post',
+                            'post_status' => 'publish'
+                        );
+                        $posts = new WP_Query($args);
+                        while ($posts->have_posts()) {
+                            $posts->the_post(); ?>
                             <div class="blog_slider_box">
                                 <a href="#" class="blog_slider_box--link">
                                     <div class="blog_slider_box--link-img mb-2">
-                                        <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/IMG_6277.jpg" alt="" srcset="" class="img-fluid">
+                                        <?php
+                                        $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail');
+                                        if ($imgPath) { ?>
+                                            <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid">
+                                        <?php } else { ?>
+                                            <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid" height="141px">
+                                        <?php }
+                                        ?>
                                     </div>
                                     <h3>
-                                        Category
+                                        <?php
+                                        $categories =  get_the_category($post->ID)[0]->name;
+                                        echo $categories;
+                                        ?>
                                     </h3>
                                     <h2>
-                                        संस्क्रुति उन्हे जानते नयेलिए वातावरण कारन सक्षम
-                                        देकर विनिमय अंतर्गत प्रेरना समाज उन्हे
+                                        <?php echo get_the_title(); ?>
                                     </h2>
-                                    <p> <strong>Tarun Chauhan</strong> पुर्णता कार्यसिधान्तो लोगो बनाने एकत्रित विश्वव्यापि कार्य उनके बहतर
-                                        अनुवादक सुस्पश्ट संस्क्रुति उन्हे जानते नयेलिए वातावरण कारन सक्षम
-                                        देकर विनिमय अंतर्गत प्रेरना समाज उन्हे उपलब्ध तकनीकी उपेक्ष गयेगया
-                                        विज्ञान हमारी बदले हिंदी पहोच आधुनिक विभाजनक्षमता ढांचामात्रुभाषा </p>
+                                    <p>
+                                        <strong><?php echo get_the_date(); ?> | Tarun Chauhan</strong>
+                                        <?php the_excerpt(); ?>
+                                    </p>
                                 </a>
                             </div>
                         <?php } ?>
