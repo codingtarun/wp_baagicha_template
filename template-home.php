@@ -7,10 +7,25 @@ get_header(); ?>
             <div class="col-12 col-md-8">
                 <section id="hero_container">
                     <div class="hero">
-                        <?php for ($i = 0; $i < 5; $i++) { ?>
+                        <?php
+                        $args = [
+                            'post_type' => 'carousel',
+                            'post_status' => 'publish'
+                        ];
+                        $carousels = new WP_Query($args);
+                        while ($carousels->have_posts()) {
+                            $carousels->the_post();
+                        ?>
                             <div class="hero_slider">
-                                <img src="https://picsum.photos/id/<?php echo $i; ?>/1200/700" class="img-fluid" alt="" srcset="" width="100%">
-                                <a href="http://google.com">अभी तक इस उद्योग का मानक डमी पाठ मन गयातक इस उद्योग का मानक डमी पाठ मन गया, जब एक अज्ञात मुद्रक ने नमूना लेकर एक नमूना किताब बनाई</a>
+                                <?php
+                                $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail');
+                                if ($imgPath) { ?>
+                                    <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid">
+                                <?php } else { ?>
+                                    <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid" height="141px">
+                                <?php }
+                                ?>
+                                <a href="<?php echo get_field('url'); ?>" target="_blank"><?php echo get_the_title(); ?></a>
                             </div>
                         <?php } ?>
                     </div>
