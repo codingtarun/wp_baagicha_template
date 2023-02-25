@@ -1,5 +1,8 @@
 <?php
 //Template Name:Home Page
+/**
+ * This is the actual home page
+ */
 get_header(); ?>
 <div id="main_container" class="container-fluid" style="margin-top: 5rem;">
     <div class="container-fluid mb-5">
@@ -50,7 +53,7 @@ get_header(); ?>
                                         <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/apple.png" alt="" srcset="" class="img-fluid">
                                     </div>
                                     <h3>
-                                        Category
+                                        Category | HOME
                                     </h3>
                                     <h2>
                                         अभी तक इस उद्योग

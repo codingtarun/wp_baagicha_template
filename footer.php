@@ -1,4 +1,4 @@
-    <!-- <footer id="footer" class="container-fluid">
+    <footer id="footer" class="container-fluid">
         <div class="row">
             <div class="col-6 col-sm-6 about_us">
                 <h5 class="heading_primary">
@@ -24,7 +24,7 @@
                 </ul>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <?php get_footer('scripts'); ?>
     <?php wp_footer(); ?>
     </body>
