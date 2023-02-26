@@ -1,6 +1,6 @@
     <footer id="footer" class="container-fluid">
         <div class="row">
-            <div class="col-6 col-sm-6 about_us">
+            <div class="col-12 col-sm-6 about_us">
                 <h5 class="heading_primary">
                     About Us
                 </h5>
@@ -11,7 +11,7 @@
                     <li><a href="#">Meet The Team</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-sm-6 stay_connected">
+            <div class="col-12 col-sm-6 stay_connected">
                 <h5 class="heading_primary">
                     Stay Connected
                 </h5>

@@ -34,7 +34,7 @@ get_header(); ?>
                     </div>
                 </section>
             </div>
-            <div class="col-md-4">
+            <div class="d-none d-sm-block col-md-4 ">
                 SOME THINGS HERE
             </div>
         </div>
