@@ -5,6 +5,11 @@
     & li.categories {
         list-style: none;
 
+        &::target-text {
+            font-size: $fontSizePrimaryHeading;
+            color: $colorPrimaryHeading;
+        }
+
         & ul {
 
             & li.cat-item {
@@ -15,7 +20,11 @@
                     text-decoration: none;
                     color: rgba($colorBlack, 0.9);
                     display: block;
+                    border: 1px solid rgba($colorPrimary, 0.9);
+                    padding: .2rem .5rem;
+                    border-radius: .5rem;
                     font-size: .8rem;
+                    margin: .1rem .1rem;
 
                     &:hover {
                         cursor: pointer;

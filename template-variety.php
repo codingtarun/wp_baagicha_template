@@ -7,7 +7,9 @@ the_post(); // use with the_content.
 <div id="main_container" style="margin-top: 5rem;">
     <div class="container mb-5">
         <h2 class="text-center heading_primary"><?php the_title(); ?></h2>
-        <h5 class="text-center heading_tertiary">Latest Apple Varieties Information</h5>
+        <div class="container" id="all_categories">
+            <?php include '_inc/partials/_all_fruits_list.php'; ?>
+        </div>
         <div class="row">
             <?php for ($i = 0; $i < 10; $i++) { ?>
                 <div class="col-6 col-sm-4 col-md-3 g-0">

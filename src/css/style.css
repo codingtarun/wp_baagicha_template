@@ -158,6 +158,9 @@ ul#custom_link_class li a:visited {
   text-align: center; }
   #all_categories li.categories {
     list-style: none; }
+    #all_categories li.categories::target-text {
+      font-size: 3rem;
+      color: black; }
     #all_categories li.categories ul li.cat-item {
       list-style: none;
       display: inline-block; }
@@ -165,7 +168,11 @@ ul#custom_link_class li a:visited {
         text-decoration: none;
         color: rgba(0, 0, 0, 0.9);
         display: block;
-        font-size: .8rem; }
+        border: 1px solid rgba(76, 175, 80, 0.9);
+        padding: .2rem .5rem;
+        border-radius: .5rem;
+        font-size: .8rem;
+        margin: .1rem .1rem; }
         #all_categories li.categories ul li.cat-item a:hover {
           cursor: pointer;
           text-decoration: underline;

@@ -8,12 +8,12 @@ get_header();
 the_post(); // use with the_content.
 ?>
 <div id="main_container" style="margin-top: 5rem;">
-    <div class="container" id="all_categories">
-        <?php include '_inc/partials/_all_categories_list.php'; ?>
-    </div>
+
     <div class="container mb-5">
         <h2 class="text-center heading_primary">ब्लॉग </h2>
-        <h5 class="text-center heading_tertiary mb-5">News | Updates | Blogs | Inverviews | Podcast</h5>
+        <div class="container" id="all_categories">
+            <?php include '_inc/partials/_all_categories_list.php'; ?>
+        </div>
         <div class="row">
             <?php while (have_posts()) {
                 the_post();

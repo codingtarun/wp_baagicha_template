@@ -42,7 +42,7 @@ get_header(); ?>
     <div class="container mb-5">
         <div class="row">
             <div class="col-12 g-0">
-                <h2 class="text-center heading_primary">Varieties</h2>
+                <h2 class="text-center heading_primary">किस्में</h2>
                 <h5 class="text-center heading_tertiary">Latest Apple Varieties Information</h5>
                 <section id="slider_container">
                     <div class="slider">
@@ -82,7 +82,7 @@ get_header(); ?>
     <div class="container-fluid mb-5" id="blog">
         <div class="row">
             <div class="col-12 g-0">
-                <h2 class="text-center heading_primary">Blog</h2>
+                <h2 class="text-center heading_primary">ब्लॉग</h2>
                 <h5 class="text-center heading_tertiary mb-5">Latest Updates | Blogs | Inverviews</h5>
                 <section id="blog_slider_container">
                     <div class="blog_slider">
@@ -147,7 +147,7 @@ get_header(); ?>
     <div class="container mb-5">
         <div class="row">
             <div class="col-12 g-0">
-                <h2 class="text-center heading_primary">Diseases</h2>
+                <h2 class="text-center heading_primary">बीमारी</h2>
                 <h5 class="text-center heading_tertiary">Latest Apple Varieties Information</h5>
                 <section id="slider_container">
                     <div class="slider">
