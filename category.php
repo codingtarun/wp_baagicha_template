@@ -9,7 +9,7 @@ the_post(); // use with the_content.
         <?php include '_inc/partials/_all_categories_list.php'; ?>
     </div>
     <div class="container mb-5">
-        <h2 class="text-center heading_primary">Blog</h2>
+        <h2 class="text-center heading_primary">ब्लॉग</h2>
         <h5 class="text-center heading_tertiary mb-5">Latest Updates | Blogs | Inverviews</h5>
         <div class="row">
             <?php while (have_posts()) {

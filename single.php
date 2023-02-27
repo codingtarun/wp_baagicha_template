@@ -11,6 +11,7 @@ the_post(); // use with the_content.
         <?php include '_inc/partials/_all_categories_list.php'; ?>
     </div>
     <hr>
+    <h1>THIS IS DEFAULT PAGE</h1>
     <div class="container">
         <?php comments_template(); ?>
     </div>
