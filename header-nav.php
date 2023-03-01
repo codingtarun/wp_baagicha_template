@@ -1,7 +1,7 @@
 <!--Main Navigation-->
 <nav class="navbar navbar-expand-lg fixed-top bg-light shadow-sm">
     <div class="container-fluid">
-        <a class="navbar-brand" href="<?php site_url(); ?>">
+        <a class="navbar-brand" href="<?php echo site_url(); ?>">
             <!--<img src="<?php echo get_header_image(); ?>" alt="" srcset="" width="20px" height="20px">-->
             बागीचा
         </a>

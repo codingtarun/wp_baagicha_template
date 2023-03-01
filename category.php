@@ -19,7 +19,7 @@ the_post(); // use with the_content.
                     <a href="<?php echo get_permalink(); ?>" class="blog_slider_box--link  shadow-sm">
                         <div class="blog_slider_box--link-img mb-2">
                             <?php
-                            $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail');
+                            $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
                             if ($imgPath) { ?>
                                 <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid">
                             <?php } else { ?>
@@ -37,8 +37,8 @@ the_post(); // use with the_content.
                         <h2>
                             <?php the_title(); ?>
                         </h2>
+                        <h3><?php echo get_the_date(); ?> | Tarun Chauhan</h3>
                         <p>
-                            <strong><?php echo get_the_date(); ?> | Tarun Chauhan</strong>
                             <?php the_excerpt(); ?>
                         </p>
                     </a>

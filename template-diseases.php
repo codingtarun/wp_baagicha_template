@@ -1,5 +1,5 @@
 <?php
-//Template Name:Variety Page
+//Template Name:Disease Page
 
 get_header();
 the_post(); // use with the_content.
@@ -16,7 +16,7 @@ the_post(); // use with the_content.
                     <div class="slider_box shadow-sm">
                         <a href="#" class="slider_box--link">
                             <div class="slider_box--link-img mb-2">
-                                <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid">
+                                <img src="http://localhost/wp_playground/wp-content/uploads/2023/02/infected_new_leaves.png" alt="" srcset="" class="img-fluid">
                             </div>
                             <h3>
                                 Category

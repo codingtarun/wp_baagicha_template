@@ -18,18 +18,20 @@
 
                 & a {
                     text-decoration: none;
-                    color: rgba($colorBlack, 0.9);
+                    background: rgba($colorPrimary, 0.9);
+                    color: rgba($colorWhite, 1);
                     display: block;
                     border: 1px solid rgba($colorPrimary, 0.9);
                     padding: .2rem .5rem;
-                    border-radius: .5rem;
+                    border-radius: .1rem;
                     font-size: .8rem;
                     margin: .1rem .1rem;
 
                     &:hover {
                         cursor: pointer;
-                        text-decoration: underline;
+                        //text-decoration: underline;
                         color: rgba($colorPrimary, 0.9);
+                        background-color: rgba($colorWhite, 1);
                     }
                 }
             }

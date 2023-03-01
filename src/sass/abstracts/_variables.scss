@@ -4,19 +4,24 @@ $colorWhite : #ffffff;
 $colorBlack : #000000;
 $colorOffWhite : rgb(238, 238, 238);
 $colorPrimaryHeading : rgba(0, 0, 0, 1);
-$colorSecondaryHeading : rgba(128, 128, 128, 0.9);
+$colorSecondaryHeading : rgba(0, 0, 0, .5);
 $colorTertiaryText : rgba(0, 0, 0, .9);
 $colorNavbarLinks : rgba(0, 0, 0, 0.9);
+$colorFooterBackground : #17171E;
 // FONT SIZE 
 $fontSizePrimaryHeading : 3rem;
 $fontSizePrimaryHeadingMobile : 3rem;
-$fontSizeSecondaryHeading : 1.2rem;
+$fontSizeSecondaryHeading : 1.1rem;
 $fontSizeSecondaryHeadingMobile : 2rem;
 $fontSizeSecondaryHeadingTablet : 2rem;
-$fontSizeTertiaryHeading : .9rem;
+$fontSizeTertiaryHeading : .7rem;
 $fontSizeParagraph : 1rem;
+$fontSizeExcrept : .8rem;
 $fontSizeParagraphMobile : .55rem;
 $fontSizeParagraphTablet : .6rem;
 
 // BORDER 
 $borderBottom : 1px solid rgba($colorOffWhite, 0.7);
+//LINE HEIGHT
+
+$linehightNormal : 1.4rem;

@@ -25,7 +25,7 @@ body {
 
 .heading_secondary {
   font-size: 3rem;
-  color: rgba(128, 128, 128, 0.9); }
+  color: rgba(0, 0, 0, 0.5); }
 
 @keyframes moveInLeft {
   0% {
@@ -50,6 +50,28 @@ li.current_page_item a,
 li.current-menu-item a {
   color: rgba(76, 175, 80, 0.7) !important;
   border-bottom: 1px solid rgba(76, 175, 80, 0.7) !important; }
+
+#footer {
+  background: #17171E;
+  padding: 5rem 2rem; }
+  #footer h2.heading {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    padding-bottom: .5rem; }
+  #footer ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0; }
+    #footer ul li a {
+      color: rgba(255, 255, 255, 0.7); }
+  #footer .stay_connected ul li a {
+    display: block;
+    padding: .1rem .2rem;
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2rem;
+    font-weight: bold;
+    float: left; }
 
 #hero_container .hero_slider {
   padding: 0;
@@ -79,49 +101,88 @@ li.current-menu-item a {
       .slider_box--link-img img {
         transition: all 0.3s ease-in-out; }
     .slider_box--link h3 {
-      color: rgba(128, 128, 128, 0.9);
-      font-size: 0.9rem; }
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 0.7rem; }
     .slider_box--link h2 {
       color: black;
-      font-size: 1.2rem; }
+      font-size: 1.1rem; }
 
 .slider_box:hover .slider_box--link-img img {
   transform: scale(1.01); }
 
 #blog {
   background: radial-gradient(#e5dcdc 5%, transparent 10%) 0px 0px/20px 20px, radial-gradient(rgba(220, 220, 220, 0.2) 0%, transparent 0%) 50px 50px rgba(220, 220, 220, 0.2);
-  padding: 5rem .5rem; }
+  padding: 2rem .5rem; }
 
 .blog_slider {
-  width: 92%;
+  width: 90%;
   margin: 1rem auto; }
   .blog_slider_box--link {
     text-decoration: none;
     display: block;
-    margin: .3rem 1rem;
-    height: 95%; }
+    margin: .5rem .5rem;
+    height: 100%; }
     .blog_slider_box--link-img {
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
       .blog_slider_box--link-img img {
         transition: all 0.3s ease-in-out; }
+    .blog_slider_box--link .img-outline {
+      height: 93%;
+      width: 93%;
+      outline: 4px solid rgba(255, 255, 255, 0.8);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
     .blog_slider_box--link h3 {
-      padding: .5rem;
-      color: rgba(128, 128, 128, 0.9);
-      font-size: 0.9rem;
-      margin: .1rem 0; }
+      padding: 0 .5rem;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 0.7rem;
+      margin: 0; }
     .blog_slider_box--link h2 {
-      padding: .5rem;
+      padding: 0.3rem .5rem;
       color: black;
-      font-size: 1.2rem;
-      margin: .1rem 0;
-      text-align: justify; }
+      font-size: 1.1rem;
+      margin: 0;
+      text-align: justify;
+      line-height: 1.4rem; }
     .blog_slider_box--link p {
       color: rgba(0, 0, 0, 0.9);
-      font-size: 1rem;
+      font-size: 0.8rem;
       text-align: justify;
-      padding: .5rem; }
+      padding: 0 .5rem; }
   .blog_slider_box:hover .blog_slider_box--link-img img {
-    transform: scale(1.01); }
+    transform: scale(1.02); }
+
+.post {
+  margin-top: 3rem; }
+  .post h1 {
+    padding: 0.3rem .5rem;
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin: 0 0 .5rem 0;
+    text-align: justify; }
+  .post h3 {
+    padding: 0 .5rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: .8rem;
+    margin: 0 0 .5rem 0; }
+  .post .blog-excrept p {
+    padding: 1rem 1rem;
+    border-left: 3px solid #4CAF50;
+    margin: 2rem 0;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.9);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-size: .9rem;
+    background: radial-gradient(#e5dcdc 5%, transparent 10%) 0px 0px/20px 20px, radial-gradient(rgba(220, 220, 220, 0.2) 0%, transparent 0%) 50px 50px rgba(220, 220, 220, 0.2); }
+  .post .main-body p {
+    text-align: justify;
+    line-height: 1.4rem;
+    font-size: .9rem; }
 
 .slick-slider button.slick-arrow {
   height: 100%;
@@ -166,14 +227,15 @@ ul#custom_link_class li a:visited {
       display: inline-block; }
       #all_categories li.categories ul li.cat-item a {
         text-decoration: none;
-        color: rgba(0, 0, 0, 0.9);
+        background: rgba(76, 175, 80, 0.9);
+        color: white;
         display: block;
         border: 1px solid rgba(76, 175, 80, 0.9);
         padding: .2rem .5rem;
-        border-radius: .5rem;
+        border-radius: .1rem;
         font-size: .8rem;
         margin: .1rem .1rem; }
         #all_categories li.categories ul li.cat-item a:hover {
           cursor: pointer;
-          text-decoration: underline;
-          color: rgba(76, 175, 80, 0.9); }
+          color: rgba(76, 175, 80, 0.9);
+          background-color: white; }

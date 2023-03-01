@@ -83,7 +83,9 @@ get_header(); ?>
         <div class="row">
             <div class="col-12 g-0">
                 <h2 class="text-center heading_primary">ब्लॉग</h2>
-                <h5 class="text-center heading_tertiary mb-5">Latest Updates | Blogs | Inverviews</h5>
+                <!-- <div class="container" id="all_categories">
+                    <?php include '_inc/partials/_all_categories_list.php'; ?>
+                </div> -->
                 <section id="blog_slider_container">
                     <div class="blog_slider">
                         <?php
@@ -95,28 +97,33 @@ get_header(); ?>
                         while ($posts->have_posts()) {
                             $posts->the_post(); ?>
                             <div class="blog_slider_box">
-                                <a href="#" class="blog_slider_box--link">
+                                <a href="<?php echo get_permalink(); ?>" class="blog_slider_box--link">
                                     <div class="blog_slider_box--link-img mb-2">
                                         <?php
-                                        $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail');
+                                        $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), array(450, 450));
                                         if ($imgPath) { ?>
-                                            <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid">
+                                            <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid" width="100%">
                                         <?php } else { ?>
-                                            <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid" height="141px">
+                                            <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid">
                                         <?php }
                                         ?>
+                                        <div class="img-outline shadow-lg"></div>
                                     </div>
                                     <h3>
                                         <?php
-                                        $categories =  get_the_category($post->ID)[0]->name;
-                                        echo $categories;
+                                        $categories =  get_the_category($post->ID); //[0]; //->name;
+                                        //print_r($categories);
+                                        foreach ($categories as $cat) {
+                                            echo $cat->name . " | ";
+                                        }
+                                        //echo $categories;
                                         ?>
                                     </h3>
                                     <h2>
                                         <?php echo get_the_title(); ?>
                                     </h2>
+                                    <h3><?php echo get_the_date(); ?> | Tarun Chauhan</h3>
                                     <p>
-                                        <strong><?php echo get_the_date(); ?> | Tarun Chauhan</strong>
                                         <?php the_excerpt(); ?>
                                     </p>
                                 </a>
@@ -125,7 +132,7 @@ get_header(); ?>
                         <div class="blog_slider_box">
                             <a href="#" class="blog_slider_box--link">
                                 <div class="blog_slider_box--link-img mb-2">
-                                    <img src="https://picsum.photos/id/21/500/500" alt="" srcset="" class="img-fluid">
+                                    <img src="http://localhost/wp_playground/wp-content/uploads/2023/02/IMG_3394.jpg" alt="" srcset="" class="img-fluid">
                                 </div>
                                 <h3>
                                     View All
@@ -155,7 +162,7 @@ get_header(); ?>
                             <div class="slider_box shadow-sm">
                                 <a href="#" class="slider_box--link">
                                     <div class="slider_box--link-img mb-2">
-                                        <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid">
+                                        <img src="http://localhost/wp_playground/wp-content/uploads/2023/02/infected_new_leaves.png" alt="" srcset="" class="img-fluid">
                                     </div>
                                     <h3>
                                         Category
