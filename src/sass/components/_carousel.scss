@@ -3,22 +3,44 @@
         &_slider {
             padding: 0;
             position: relative;
+            //width: 90%;
+            margin: 0 auto;
 
-            & img {}
+            & img {
+                display: block;
+                width: 100%;
+            }
 
             & a:link,
             & a:visited,
             & a:active {
+                z-index: 100;
                 text-decoration: none;
                 color: $colorWhite;
-                width: 100%;
+                width: 97%;
+                height: 30%;
                 position: absolute;
                 bottom: 0;
                 left: 50%;
-                transform: translate(-50%, 0);
+                transform: translate(-50%, -9%);
                 display: block;
                 background-color: rgba($colorBlack , 0.6);
-                padding: 2rem;
+                padding: 1rem;
+                font-size: $fontSizeSecondaryHeading;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+
+            & .slider_border {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 95%;
+                width: 97%;
+                outline: 2px solid rgba($colorWhite, 0.6);
+                transform: translate(-50%, -50%);
             }
         }
     }

@@ -8,8 +8,9 @@ $diseasesTypes = get_terms(['taxonomy' => 'disease_types', 'hide_empty' => false
         <?php foreach ($diseasesTypes as $type) {
         ?>
             <li class="cat-item">
-                <a href="#"> <?php echo $type->name; ?></a>
-                <small><?php echo get_wp_term_image($type->term_id); ?></small>
+                <a href="<?php echo get_category_link($type->term_id); ?>"> <?php echo $type->name; ?></a>
+                <small><?php //echo get_wp_term_image($type->term_id); 
+                        ?></small>
             </li>
         <?php } ?>
     </ul>

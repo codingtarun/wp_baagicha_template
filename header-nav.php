@@ -1,3 +1,6 @@
+<!--Facebook SDK-->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=228453946206759&autoLogAppEvents=1" nonce="kqlIgrEe"></script>
 <!--Main Navigation-->
 <nav class="navbar navbar-expand-lg fixed-top bg-light shadow-sm">
     <div class="container-fluid">

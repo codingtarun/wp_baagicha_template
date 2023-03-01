@@ -28,6 +28,13 @@
                 font-size: $fontSizeSecondaryHeading;
             }
 
+            & p {
+                color: $colorTertiaryText;
+                font-size: $fontSizeExcrept;
+                text-align: justify;
+                padding: 0 .5rem;
+            }
+
         }
     }
 

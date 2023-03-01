@@ -1,5 +1,5 @@
 <?php
-$fruitsList = get_terms(['taxonomy' => 'fruit', 'hide_empty' => false]);
+$fruitsList = get_terms(['taxonomy' => 'fruit', 'hide_empty' => false, 'orderby' => 'ID', 'order' => 'ASC',]);
 //print_r($fruitsList);
 ?>
 <li class="categories">

@@ -1,9 +1,9 @@
 <?php get_header();
 the_post(); // use with the_content.
 ?>
-<div id="main_container" style="margin-top: 5rem;">
+<div id="main_container" class="container-fluid" style="margin-top: 5rem;">
     <div class="container post">
-        <h1><?php the_title(); ?></h1>
+        <h1 class="text-center"><?php echo the_title(); ?></h1>
         <h3>
             <?php
             $categories =  get_the_category($post->ID); //[0]; //->name;
@@ -26,14 +26,12 @@ the_post(); // use with the_content.
                 <?php the_content(); ?>
             </div>
         </div>
-
     </div>
     <div class="container" id="all_categories">
-        <?php include '_inc/partials/_all_categories_list.php'; ?>
+        <?php include '_inc/partials/_all_diseases_type_list.php'; ?>
     </div>
     <hr>
     <div class="col-12">
         <div class="fb-comments" data-href="<?php echo "https://baagicha.in/" . $_SERVER['REQUEST_URI']; ?>" data-width="" data-numposts="5"></div>
     </div>
-</div>
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

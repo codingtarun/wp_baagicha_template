@@ -5,9 +5,9 @@
  */
 get_header(); ?>
 <div id="main_container" class="container-fluid" style="margin-top: 5rem;">
-    <div class="container-fluid mb-5">
+    <div class="container mb-5">
         <div class="row">
-            <div class="col-12 col-md-8">
+            <div class="col-12">
                 <section id="hero_container">
                     <div class="hero">
                         <?php
@@ -21,21 +21,21 @@ get_header(); ?>
                         ?>
                             <div class="hero_slider">
                                 <?php
-                                $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'thumbnail');
+                                $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), array(1200, 0));
                                 if ($imgPath) { ?>
                                     <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid">
                                 <?php } else { ?>
-                                    <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid" height="141px">
+                                    <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid" width="100%">
                                 <?php }
                                 ?>
                                 <a href="<?php echo get_field('url'); ?>" target="_blank"><?php echo get_the_title(); ?></a>
+                                <div class="slider_border">
+
+                                </div>
                             </div>
                         <?php } ?>
                     </div>
                 </section>
-            </div>
-            <div class="d-none d-sm-block col-md-4 ">
-                SOME THINGS HERE
             </div>
         </div>
     </div>
@@ -46,17 +46,31 @@ get_header(); ?>
                 <h5 class="text-center heading_tertiary">Latest Apple Varieties Information</h5>
                 <section id="slider_container">
                     <div class="slider">
-                        <?php for ($i = 0; $i < 5; $i++) { ?>
+                        <?php
+                        $args = array(
+                            'post_type' => 'variety',
+                            'post_status' => 'publish'
+                        );
+                        $varieties = new WP_Query($args);
+                        while ($varieties->have_posts()) {
+                            $varieties->the_post(); ?>
                             <div class="slider_box shadow-sm">
-                                <a href="#" class="slider_box--link">
+                                <a href="<?php echo get_the_permalink(); ?>" class="slider_box--link">
                                     <div class="slider_box--link-img mb-2">
-                                        <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/apple.png" alt="" srcset="" class="img-fluid">
+                                        <?php
+                                        $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), array(450, 450));
+                                        if ($imgPath) { ?>
+                                            <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid" width="100%">
+                                        <?php } else { ?>
+                                            <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid">
+                                        <?php }
+                                        ?>
                                     </div>
                                     <h3>
                                         Category | HOME
                                     </h3>
                                     <h2>
-                                        अभी तक इस उद्योग
+                                        <?php echo the_title(); ?>
                                     </h2>
                                 </a>
                             </div>
@@ -133,6 +147,7 @@ get_header(); ?>
                             <a href="#" class="blog_slider_box--link">
                                 <div class="blog_slider_box--link-img mb-2">
                                     <img src="http://localhost/wp_playground/wp-content/uploads/2023/02/IMG_3394.jpg" alt="" srcset="" class="img-fluid">
+                                    <div class="img-outline shadow-lg"></div>
                                 </div>
                                 <h3>
                                     View All
@@ -158,18 +173,43 @@ get_header(); ?>
                 <h5 class="text-center heading_tertiary">Latest Apple Varieties Information</h5>
                 <section id="slider_container">
                     <div class="slider">
-                        <?php for ($i = 0; $i < 5; $i++) { ?>
+                        <?php
+                        $args = array(
+                            'post_type' => 'disease',
+                            'post_status' => 'publish'
+                        );
+                        $diseases = new WP_Query($args);
+                        while ($diseases->have_posts()) {
+                            $diseases->the_post(); ?>
                             <div class="slider_box shadow-sm">
-                                <a href="#" class="slider_box--link">
+                                <a href="<?php echo get_the_permalink(); ?>" class="slider_box--link">
                                     <div class="slider_box--link-img mb-2">
-                                        <img src="http://localhost/wp_playground/wp-content/uploads/2023/02/infected_new_leaves.png" alt="" srcset="" class="img-fluid">
+                                        <?php
+                                        $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), array(450, 450));
+                                        if ($imgPath) { ?>
+                                            <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid" width="100%">
+                                        <?php } else { ?>
+                                            <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid">
+                                        <?php }
+                                        ?>
+                                        <div class="img-outline shadow-lg"></div>
                                     </div>
                                     <h3>
-                                        Category
+                                        <?php
+                                        //$categories =  get_the_category($post->ID); //[0]; //->name;
+                                        $categories = get_terms(['taxonomy' => 'disease_types', 'hide_empty' => false]);
+                                        //print_r($categories);
+                                        foreach ($categories as $cat) {
+                                            echo $cat->name . " | ";
+                                        }
+                                        ?>
                                     </h3>
                                     <h2>
-                                        अभी तक इस उद्योग
+                                        <?php echo get_the_title(); ?>
                                     </h2>
+                                    <p>
+                                        <?php the_excerpt(); ?>
+                                    </p>
                                 </a>
                             </div>
                         <?php } ?>

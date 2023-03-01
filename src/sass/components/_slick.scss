@@ -2,8 +2,8 @@
 
 
     & button.slick-arrow {
-        height: 100%;
-        width: 4rem;
+        //height: 100%;
+        width: 2rem;
         //animation-name: scaleUpDown;
         //animation-duration: 3s;
     }
@@ -13,24 +13,25 @@
         z-index: 100 !important;
 
         &::before {
-            font-size: 3rem;
-            color: gray;
+            //height: 100%;
+            font-size: 2rem;
+            color: rgba(gray, 0.4);
         }
 
-        /*box-shadow: none;
-        background-image: url(https://images.yourstory.com/assets/icons/ic_brands_next_arrow.svg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 40%;
-        right: -3.2rem;*/
+        // box-shadow: none;
+        // background-image: url(https://images.yourstory.com/assets/icons/ic_brands_next_arrow.svg);
+        // background-position: center center;
+        // background-repeat: no-repeat;
+        // background-size: 40%;
+        // right: -3.2rem;
     }
 
     & button.slick-next {
         right: -3rem;
 
         &::before {
-            font-size: 3rem;
-            color: gray;
+            font-size: 2rem;
+            color: rgba(gray, 0.4);
         }
     }
 }
