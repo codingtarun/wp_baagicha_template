@@ -29,6 +29,10 @@ the_post(); // use with the_content.
                             <td><?php echo get_field('shelf_life'); ?></td>
                         </tr>
                         <tr>
+                            <td><strong>Suitable Elevation</strong></td>
+                            <td><?php echo get_field('suitable_elevation'); ?></td>
+                        </tr>
+                        <tr>
                             <td><strong>Flowering</strong></td>
                             <td><?php echo get_field('flowering'); ?></td>
                         </tr>
@@ -42,12 +46,12 @@ the_post(); // use with the_content.
                         </tr>
                         <tr>
                             <td><strong>Bearing</strong></td>
-                            <td><?php echo get_field('fruit_bearing'); ?></td>
+                            <td><?php echo get_field('bearing'); ?></td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <strong>Identification</strong><br>
-                                <?php echo get_field('identification'); ?>
+                                <strong>Vigour</strong><br>
+                                <?php echo get_field('vigour'); ?>
                             </td>
                         </tr>
                         <tr>

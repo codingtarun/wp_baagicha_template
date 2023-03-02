@@ -46,6 +46,9 @@ body {
   100% {
     transform: scale(1); } }
 
+#schedule table tr {
+  font-size: .8rem; }
+
 li.current_page_item a,
 li.current-menu-item a {
   color: rgba(76, 175, 80, 0.7) !important;
