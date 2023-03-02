@@ -90,19 +90,16 @@ li.current-menu-item a {
     text-decoration: none;
     color: #ffffff;
     width: 97%;
-    height: 30%;
+    height: 40%;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -9%);
     display: block;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    font-size: 1.1rem; }
-    #hero_container .hero_slider a:link:hover,
-    #hero_container .hero_slider a:visited:hover,
-    #hero_container .hero_slider a:active:hover {
-      font-weight: bold; }
+    font-size: .8rem;
+    text-align: center; }
   #hero_container .hero_slider .slider_border {
     position: absolute;
     top: 50%;

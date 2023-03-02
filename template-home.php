@@ -21,7 +21,7 @@ get_header(); ?>
                         ?>
                             <div class="hero_slider">
                                 <?php
-                                $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), array(1200, 0));
+                                $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), array(1200, 600));
                                 if ($imgPath) { ?>
                                     <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid">
                                 <?php } else { ?>

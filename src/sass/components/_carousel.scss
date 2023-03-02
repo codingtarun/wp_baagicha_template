@@ -18,19 +18,18 @@
                 text-decoration: none;
                 color: $colorWhite;
                 width: 97%;
-                height: 30%;
+                height: 40%;
                 position: absolute;
                 bottom: 0;
                 left: 50%;
                 transform: translate(-50%, -9%);
                 display: block;
-                background-color: rgba($colorBlack , 0.6);
+                background-color: rgba($colorBlack , 0.2);
                 padding: 1rem;
-                font-size: $fontSizeSecondaryHeading;
+                font-size: .8rem;
+                text-align: center;
 
-                &:hover {
-                    font-weight: bold;
-                }
+                &:hover {}
             }
 
             & .slider_border {
