@@ -25,12 +25,12 @@ get_header(); ?>
                                 if ($imgPath) { ?>
                                     <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid" height="600px" width="300px">
                                 <?php } else { ?>
-                                    <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid" width="100%">
+                                    <img src="http://baagicha.in/wp-content/uploads/2023/03/IMG_6140-min.jpg" alt="" srcset="" class="img-fluid" width="100%">
                                 <?php }
                                 ?>
                                 <a href="<?php echo get_field('url'); ?>" target="_blank"><?php echo get_the_title(); ?></a>
                                 <div class="slider_border">
-
+                                    <!-- <a href="<?php echo get_field('url'); ?>" target="_blank"><?php echo get_the_title(); ?></a> -->
                                 </div>
                             </div>
                         <?php } ?>
@@ -144,21 +144,18 @@ get_header(); ?>
                             </div>
                         <?php } ?>
                         <div class="blog_slider_box">
-                            <a href="#" class="blog_slider_box--link">
+                            <a href="<?php echo site_url(); ?>./blog/" class="blog_slider_box--link">
                                 <div class="blog_slider_box--link-img mb-2">
-                                    <img src="http://localhost/wp_playground/wp-content/uploads/2023/02/IMG_3394.jpg" alt="" srcset="" class="img-fluid">
+                                    <img src="http://baagicha.in/wp-content/uploads/2023/03/IMG_6140-min.jpg" alt="" srcset="" class="img-fluid">
                                     <div class="img-outline shadow-lg"></div>
                                 </div>
                                 <h3>
-                                    View All
+                                    ब्लॉग
                                 </h3>
                                 <h2>
-                                    View ALL
+                                    और देखें
                                 </h2>
-                                <p> पुर्णता कार्यसिधान्तो लोगो बनाने एकत्रित विश्वव्यापि कार्य उनके बहतर
-                                    अनुवादक सुस्पश्ट संस्क्रुति उन्हे जानते नयेलिए वातावरण कारन सक्षम
-                                    देकर विनिमय अंतर्गत प्रेरना समाज उन्हे उपलब्ध तकनीकी उपेक्ष गयेगया
-                                    विज्ञान हमारी बदले हिंदी पहोच आधुनिक विभाजनक्षमता ढांचामात्रुभाषा </p>
+                                <p style="font-size:2rem"> सेब बागवानी से जुडी हुई और जानकारी के लिए कृपया यहाँ क्लिक करें</p>
                             </a>
                         </div>
                     </div>

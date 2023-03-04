@@ -1,5 +1,5 @@
 <?php
-//Template Name:Blog Page
+//Template Name:Category Page
 
 get_header();
 the_post(); // use with the_content.
@@ -7,14 +7,18 @@ the_post(); // use with the_content.
 <div id="main_container" style="margin-top: 5rem;">
 
     <div class="container mb-5">
-        <h2 class="text-center heading_primary">ब्लॉग</h2>
+        <h2 class="text-center heading_primary">ब्लॉग ABC</h2>
         <div class="container" id="all_categories">
             <?php include '_inc/partials/_all_categories_list.php'; ?>
         </div>
         <div class="row">
-            <?php while (have_posts()) {
-                the_post();
-            ?>
+            <?php $args = array(
+                'post_type' => 'disease',
+                'post_status' => 'publish'
+            );
+            $diseases = new WP_Query($args);
+            while ($diseases->have_posts()) {
+                $posts->the_post(); ?>
                 <div class="col-12 col-sm-4 col-md-3 blog_slider_box g-0">
                     <a href="<?php echo get_permalink(); ?>" class="blog_slider_box--link  shadow-sm">
                         <div class="blog_slider_box--link-img mb-2">

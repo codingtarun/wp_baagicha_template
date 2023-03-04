@@ -20,11 +20,11 @@ body {
   line-height: 1.7; }
 
 .heading_primary {
-  font-size: 3rem;
+  font-size: 2rem;
   color: black; }
 
 .heading_secondary {
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.5); }
 
 @keyframes moveInLeft {
@@ -84,11 +84,12 @@ li.current-menu-item a {
     margin: 0 auto; }
     #hero_container .hero_slider img {
       display: block;
-      width: 100%; }
+      width: 100%;
+      z-index: -10; }
     #hero_container .hero_slider a:link,
     #hero_container .hero_slider a:visited,
     #hero_container .hero_slider a:active {
-      z-index: 100;
+      z-index: 10000;
       text-decoration: none;
       color: #ffffff;
       display: block;
@@ -97,7 +98,7 @@ li.current-menu-item a {
       font-size: 1.3rem;
       text-align: center; }
     #hero_container .hero_slider .slider_border {
-      z-index: 0;
+      z-index: 20;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -196,8 +197,7 @@ li.current-menu-item a {
   .post h1 {
     padding: 0.3rem .5rem;
     color: black;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    font-size: 2rem;
     margin: 0 0 .5rem 0;
     text-align: justify; }
   .post h3 {
@@ -205,7 +205,7 @@ li.current-menu-item a {
     color: rgba(0, 0, 0, 0.5);
     font-size: .8rem;
     margin: 0 0 .5rem 0; }
-  .post .blog-excrept p {
+  .post .blog-excrept {
     padding: 1rem 1rem;
     border-left: 3px solid #4CAF50;
     margin: 2rem 0;
@@ -215,7 +215,7 @@ li.current-menu-item a {
     border-bottom-right-radius: 1rem;
     font-size: .9rem;
     background: radial-gradient(#e5dcdc 5%, transparent 10%) 0px 0px/20px 20px, radial-gradient(rgba(220, 220, 220, 0.2) 0%, transparent 0%) 50px 50px rgba(220, 220, 220, 0.2); }
-  .post .main-body p {
+  .post .main-body {
     text-align: justify;
     line-height: 1.4rem;
     font-size: .9rem; }
@@ -249,7 +249,7 @@ ul#custom_link_class li a:visited {
   #all_categories li.categories {
     list-style: none; }
     #all_categories li.categories::target-text {
-      font-size: 3rem;
+      font-size: 2rem;
       color: black; }
     #all_categories li.categories ul li.cat-item {
       list-style: none;

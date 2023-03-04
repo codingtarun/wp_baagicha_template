@@ -4,8 +4,8 @@
     & h1 {
         padding: 0.3rem .5rem;
         color: $colorPrimaryHeading;
-        font-size: $fontSizeSecondaryHeading;
-        line-height: $linehightNormal;
+        font-size: $fontSizePrimaryHeading;
+        //line-height: $lineHeightHeading;
         margin: 0 0 .5rem 0;
         text-align: justify;
     }
@@ -17,7 +17,7 @@
         margin: 0 0 .5rem 0;
     }
 
-    & .blog-excrept p {
+    & .blog-excrept {
         padding: 1rem 1rem;
         border-left: 3px solid $colorPrimary;
         margin: 2rem 0;
@@ -29,7 +29,7 @@
         background: radial-gradient(rgb(229, 220, 220) 5%, transparent 10%) 0px 0px / 20px 20px, radial-gradient(rgba(220, 220, 220, 0.2) 0%, transparent 0%) 50px 50px rgba(220, 220, 220, 0.2);
     }
 
-    & .main-body p {
+    & .main-body {
         text-align: justify;
         line-height: $linehightNormal;
         font-size: .9rem;
