@@ -73,8 +73,7 @@ the_post(); // use with the_content.
                                                 Horticulture Mineral Oil(HMO) (4lt/200L)
                                             </td>
                                             <td>
-                                                Sanjose scale &
-                                                mite
+                                                Sanjose scale & mite
                                             </td>
                                         </tr>
                                     </table>
@@ -459,38 +458,209 @@ the_post(); // use with the_content.
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ol>
-                                    <li>This spray schedule is for normal weather conditions.</li>
-                                    <li>In case of heavy rains within 12 hours of spray, the spray is to be repeated within seven days.</li>
-                                    <li>Do not repeat the same chemical for spray.</li>
-                                    <li>Do not mix Dodine with other pesticides/chemicals.</li>
-                                    <li>In scab prone areas 12-14 days interval should be maintained between the sprays up to primary scab stage</li>
-                                    <li>Use of Captan should be avoided before and after the oil spray for minimum 15 days.</li>
-                                    <li>Dodine should not be mixed with hard water</li>
+                                    <li>यह स्प्रे शेड्यूल सामान्य मौसम की स्थिति के लिए है।</li>
+                                    <li>यदि स्प्रे के 12 घंटे के भीतर भारी बारिश होती है तो ऐसी स्तिथि मे स्प्रे को सात दिनों के भीतर दोहराए जाने की सिफारिश की गयी है।</li>
+                                    <li>स्प्रे के लिए एक ही रसायन को दोहराएं नहीं।</li>
+                                    <li>अन्य कीटनाशकों/रसायनों के साथ डोडीन न मिलाएं।</li>
+                                    <li>स्कैब-प्रवण क्षेत्रों में 12-14 दिनों के अंतराल मे स्प्रे करने की सिफारिश की गयी है|</li>
+                                    <li>HMO स्प्रे के कम से कम 15 दिन पहले और 15 दिन बाद तक कैप्टन(Captan) फफूंदनाशी के उपयोग से बचने की सिफारिश की गयी है|</li>
+                                    <li>डोडीन को (hard-water) पानी के साथ न करने कीसिफारिश की गयी है|</li>
                                 </ol>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                सेब के कीट नियंत्रण हेतु छिड़काव सारणी
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
+                                कवकनाशी और कीटनाशकों की सिफारिश की
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Common Name</th>
+                                                <th scope="col">Brand/Product</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Carbendazim 50 WP* </td>
+                                                <td>Dhanustin / Bavistin / Mavistin / Derosal / Benfil / Gilzim / Carbestin / Goldstin</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Captan 50 WP*</td>
+                                                <td>Captaf / Dhanutan / Kohicap / Masstan / Captax / Capgold</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Copper Oxychloride 50 WP</td>
+                                                <td>Blitox/Fytolan/Masstox/Copter/Trucop/Riva</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dodine 65 WP</td>
+                                                <td>Superstar/Syllit/Himdin/ Tohfa /Noor</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Difenoconazole 25 EC</td>
+                                                <td>Score/Scale/Dizole/Rubigan D/Karara</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Metiram 55% + Pyraclostrobin 5%WG</td>
+                                                <td>Cabrio Top 60WG</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hexaconazole 5 EC</td>
+                                                <td>Contaf/ Hexzol /Sitara/ Titan /Glow /Envil/Hexcon/Krizole</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mancozeb 75WP*</td>
+                                                <td>Indofil M-45/ Dithane M-45/ Mass M-45/ Kohinoor M-45/ Dhanuka
+                                                    M-45/ Abic M-45 / Emthane M-45/ Uthane M- 45/ Hindustan M45/GoldM-45/Marlett M-45</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Myclobutanil 10WP</td>
+                                                <td>Systhane /Boon / Index/ Grapple </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Propineb 70 WP</td>
+                                                <td>Antracol/Aaroosh/Scale 70%WP</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thiophanate methyl 70WP*</td>
+                                                <td>Roko/ Topsin-M /Alert/ Stop/Trust/Key</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Zineb 75WP*</td>
+                                                <td>Indofil Z-78/Kanji</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ziram 27% SC*</td>
+                                                <td>Cuman L</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ziram 80% WP*</td>
+                                                <td>IPL Ziram-80</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tebuconazole 50% + Trifloxystrobin 25%WG</td>
+                                                <td>Nativo75 WG</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tebuconazole 8% + Captan 32% SC</td>
+                                                <td>Shamir</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fluxapyroxad 75g/l + Difenoconazole 50 g/l SC</td>
+                                                <td>Sercadis Plus 12.5 SC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Carbendazim 12% + Mancozeb 63%WP</td>
+                                                <td>SAAF</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Boscalid 25.2% + Pyraclostrobin 12.8% w/w WG</td>
+                                                <td>Signum 38% WG</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Metrafenone 500g/l SC</td>
+                                                <td>Acrisio 50 SC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fluxapyroxad 250 g/l + Pyraclostrobin 250 g/l 500 SC</td>
+                                                <td>Merivon 50 SC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flusilazole 40% EC</td>
+                                                <td>Cursor 40% EC/Governor 40% EC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Carbendazim 25% + Flusilazole 12.5% SC</td>
+                                                <td>Lustre37.5% SC</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fluopyram 17.7% w/w + Tebuconazole 17.7% w/w SC</td>
+                                                <td>LUNAExperience</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dodine 40% SC</td>
+                                                <td>DodinO FIL</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hexaconazole 4% + Zineb 68% WP</td>
+                                                <td>Avtaar</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                कवकनाशी और कीटनाशकों की सिफारिश की
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Common Name</th>
+                                                <th scope="col">Brand/Product</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Chlorpyriphos 20 EC*</td>
+                                                <td>Dursban / Durmet / Danusban / Massban / Force / Tricel / Navigator / Goldban</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fenazaquin 10 EC</td>
+                                                <td>Magister / Majestic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hexythiazox 5.45% EC</td>
+                                                <td>Maiden / Endurer</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Malathion 50 EC*</td>
+                                                <td>Cythion / Massthion</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oxy-demeton Methyl 25% EC</td>
+                                                <td>Metasystox</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Propargite 57 EC </td>
+                                                <td>Omite / Simba</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Spiromesifen 22.9 % SC</td>
+                                                <td>Oberon</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Horticultural Mineral oil</td>
+                                                <td>HP Spray Oil E</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Thiacloprid 21.7% SC</td>
+                                                <td>Alanto</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Propargite 42% + Hexythiazox 2% EC</td>
+                                                <td>Ceasemite</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cyenopyrafen 30%SC</td>
+                                                <td>Kunoichi</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

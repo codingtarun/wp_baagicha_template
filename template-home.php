@@ -29,9 +29,7 @@ get_header(); ?>
                                 <?php }
                                 ?>
                                 <a href="<?php echo get_field('url'); ?>" target="_blank"><?php echo get_the_title(); ?></a>
-                                <div class="slider_border">
-                                    <!-- <a href="<?php echo get_field('url'); ?>" target="_blank"><?php echo get_the_title(); ?></a> -->
-                                </div>
+
                             </div>
                         <?php } ?>
                     </div>
