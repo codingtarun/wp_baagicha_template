@@ -179,7 +179,7 @@ the_post(); // use with the_content.
                                             <td>
                                                 Spiromesifen (60ml/200L)<br>
                                                 or<br>
-                                                Cyenopyrafen 30%SC (50ml/200L<br>
+                                                Cyenopyrafen 30%SC (50ml/200L)<br>
                                                 or<br>
                                                 Hexythiazox (200ml/200L)<br>
                                             </td>

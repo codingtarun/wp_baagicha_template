@@ -28,12 +28,11 @@ the_post(); // use with the_content.
                     <a href="<?php echo get_permalink(); ?>" class="blog_slider_box--link shadow-sm">
                         <div class="blog_slider_box--link-img mb-2">
                             <?php
-                            $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), array(450, 450));
+                            $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
                             if ($imgPath) { ?>
                                 <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid" width="100%">
                             <?php } else { ?>
                                 <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid">
-
                             <?php }
                             ?>
                             <div class="img-outline shadow-sm"></div>

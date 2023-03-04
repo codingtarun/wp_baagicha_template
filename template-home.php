@@ -107,7 +107,8 @@ get_header(); ?>
                         );
                         $posts = new WP_Query($args);
                         while ($posts->have_posts()) {
-                            $posts->the_post(); ?>
+                            $posts->the_post();
+                        ?>
                             <div class="blog_slider_box">
                                 <a href="<?php echo get_permalink(); ?>" class="blog_slider_box--link">
                                     <div class="blog_slider_box--link-img mb-2">
