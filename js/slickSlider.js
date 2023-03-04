@@ -17,7 +17,7 @@ $(document).ready(function () {
             {
                 breakpoint: 600,
                 settings: {
-                    centerMode: true,
+                    centerMode: false,
                     infinite: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -27,7 +27,7 @@ $(document).ready(function () {
             {
                 breakpoint: 480,
                 settings: {
-                    centerMode: true,
+                    centerMode: false,
                     infinite: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,

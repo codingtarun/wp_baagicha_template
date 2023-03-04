@@ -10,32 +10,33 @@ the_post(); // use with the_content.
         <h2 class="text-center heading_primary">सेब स्प्रे सारणी 2023</h2>
         <hr>
         <div class="row d-flex justify-content-center">
-            <div class="col-lg-9">
+            <div class="col-lg-10">
+                <h5 class="text-center mt-2 mb-2">सेब के रोग और कीटों के नियंत्रण के लिए छिड़काव सारणी</h5>
+                <div class="row d-flex justify-content-around" style="font-size:.8rem">
+                    <div class="col-11 col-sm-5 alert alert-success p-0 text-center">फफूंदनाशी (Fungicide) अनुसूची हरे रंग में दी गई है </div>
+                    <div class="col-11 col-sm-5 alert alert-primary p-0 text-center">कीटनाशक (Insecticide) अनुसूची नीले रंग में दी गई है</div>
+                </div>
                 <div class="table-responsive ">
-                    <h5 class="text-center mt-2 mb-2">सेब के रोग और कीटों के नियंत्रण के लिए छिड़काव सारणी</h5>
-                    <div class="row d-flex justify-content-around" style="font-size:.8rem">
-                        <div class="col-sm-5 alert alert-success p-0 text-center">फफूंदनाशी (Fungicide) अनुसूची हरे रंग में दी गई है </div>
-                        <div class="col-sm-5 alert alert-primary p-0 text-center">कीटनाशक (Insecticide) अनुसूची नीले रंग में दी गई है</div>
-                    </div>
                     <table class="table table-sm table-bordered m-0 p-0">
                         <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">अवस्था (Stage)</th>
-                                <th scope="col" width="50%">रसायन (Chemical)</th>
-                                <th scope="col">रोग अथवा कीट (Disease or Pest)</th>
+                            <tr class="text-center">
+                                <th scope="col">अवस्था <br> (Stage)</th>
+                                <th scope="col" width="50%">रसायन <br> (Chemical)</th>
+                                <th scope="col">रोग अथवा कीट <br> (Disease or Pest)</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>
-                                    हरी नोक (Green Tip)
-                                </td>
+                                <th scope="row">
+                                    <figure>
+                                        <img src="http://baagicha.in/wp-content/uploads/2023/03/01_green_tip.jpg" alt="" srcset="" class="img-fluid" height="50px">
+                                        <figcaption class="text-center">हरी नोक (Green Tip)</figcaption>
+                                    </figure>
+                                </th>
                                 <td colspan="2" class="p-0">
                                     <table class="table align-middle table-sm m-0 p-0">
                                         <tr class="table-success">
-                                            <td width="65%">
+                                            <td width="70%">
                                                 Captan (600gm/200L)<br>
                                                 or<br>
                                                 Dodine (200gm/200L)<br>
@@ -46,7 +47,7 @@ the_post(); // use with the_content.
                                                 Scab
                                             </td>
                                         </tr>
-                                        <tr class="table-primary">
+                                        <tr class="table-success">
                                             <td>
                                                 Fluxapyroxad 75g/l + Difenconazole 50 g/l SC (60ml/200L)
                                             </td>
@@ -58,10 +59,13 @@ the_post(); // use with the_content.
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td>
-                                    आधा इंच हरी नोक (Half-inch Green Tip)
-                                </td>
+                                <th scope="row">
+                                    <figure>
+                                        <img src="http://baagicha.in/wp-content/uploads/2023/03/02_half_inch_green_tip.jpg" alt="" srcset="" class="img-fluid" height="100px">
+                                        <figcaption class="text-center">आधा इंच हरी नोक (Half-inch Green Tip)</figcaption>
+                                    </figure>
+
+                                </th>
                                 <td colspan="2" class="p-0">
                                     <table class="table align-middle table-sm m-0">
                                         <tr class="table-primary">
@@ -77,8 +81,12 @@ the_post(); // use with the_content.
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td>गुलाबी कली (Pink Bud)</td>
+                                <th scope="row">
+                                    <figure>
+                                        <img src="http://baagicha.in/wp-content/uploads/2023/03/03_pink_bud.jpg" alt="" srcset="" class="img-fluid" height="100%">
+                                    </figure>
+                                    <figcaption class="text-center">गुलाबी कली (Pink Bud)</figcaption>
+                                </th>
                                 <td colspan="2" class="p-0">
                                     <table class="table align-middle table-sm m-0">
                                         <tr class="table-success">
@@ -113,8 +121,12 @@ the_post(); // use with the_content.
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">4</th>
-                                <td>पेटल फॉल / मटर स्टेज (Petal Fall / Pea Stage)</td>
+                                <th scope="row">
+                                    <figure>
+                                        <img src="http://baagicha.in/wp-content/uploads/2023/03/04_petal_fall.jpg" alt="" srcset="" height="100%" class="img-fluid">
+                                    </figure>
+                                    <figcaption class="text-center">पेटल फॉल / मटर स्टेज (Petal Fall / Pea Stage)</figcaption>
+                                </th>
                                 <td colspan="2" class="p-0">
                                     <table class="table align-middle table-sm m-0">
                                         <tr class="table-success">
@@ -195,8 +207,14 @@ the_post(); // use with the_content.
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">5</th>
-                                <td>फल विकास चरण / अखरोट चरण (Fruit Development Stage / Walnut Stage)</td>
+                                <th scope="row">
+                                    <figure>
+                                        <img src="http://baagicha.in/wp-content/uploads/2023/03/05_walnut_stage.jpg" alt="" srcset="" class="img-fluid" height="100%">
+                                        <figcaption class="text-center">
+                                            फल विकास चरण / अखरोट चरण (Fruit Development Stage / Walnut Stage)
+                                        </figcaption>
+                                    </figure>
+                                </th>
                                 <td colspan="2" class="p-0">
                                     <table class="table align-middle table-sm m-0">
                                         <tr class="table-success">
@@ -259,8 +277,9 @@ the_post(); // use with the_content.
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">6</th>
-                                <td>फलों का विकास (4<sup>वें</sup> स्प्रे के 20 दिन बाद) / Fruit Development (20 days after 4<sup>th</sup> spray)</td>
+                                <th scope="row">
+                                    फलों का विकास (4<sup>वें</sup> स्प्रे के 20 दिन बाद) / Fruit Development (20 days after 4<sup>th</sup> spray)
+                                </th>
                                 <td colspan="2" class="p-0">
                                     <table class="table align-middle table-sm m-0">
                                         <tr class="table-success">
@@ -308,8 +327,15 @@ the_post(); // use with the_content.
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">7</th>
-                                <td>Fruit Development (20 days after 5<sup>th</sup> spray)</td>
+                                <th scope="row">
+                                    <figure>
+                                        <img src="http://baagicha.in/wp-content/uploads/2023/03/IMG_20190727_062008_Bokeh-min.jpg" alt="" srcset="" class="img-fluid" height="100%">
+                                        <figcaption class="text-center">
+                                            Fruit Development (20 days after 5<sup>th</sup> spray)
+                                        </figcaption>
+                                    </figure>
+
+                                </th>
                                 <td colspan="2" class="p-0">
                                     <table class="table align-middle table-sm m-0">
                                         <tr class="table-primary">
@@ -326,8 +352,9 @@ the_post(); // use with the_content.
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">8</th>
-                                <td>Pre Harvest (20-25 days before harvest)</td>
+                                <th scope="row">
+                                    Pre Harvest (20-25 days before harvest)
+                                </th>
                                 <td colspan="2" class="p-0">
                                     <table class="table align-middle table-sm m-0">
                                         <tr class="table-success">
@@ -384,8 +411,9 @@ the_post(); // use with the_content.
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">6</th>
-                                <td>Post Harvest</td>
+                                <th scope="row">
+                                    Post Harvest
+                                </th>
                                 <td colspan="2" class="p-0">
                                     <table class="table align-middle table-sm m-0">
                                         <tr class="table-success">
@@ -410,7 +438,6 @@ the_post(); // use with the_content.
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th scope="col">#</th>
                                 <th scope="col">Stage</th>
                                 <th scope="col">Chemical</th>
                                 <th scope="col">Disease</th>
@@ -418,6 +445,9 @@ the_post(); // use with the_content.
                         </tfoot>
                     </table>
                 </div>
+                <br>
+                <hr>
+
                 <!--Accordion Starts-->
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">

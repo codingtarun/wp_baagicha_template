@@ -5,7 +5,7 @@
  */
 get_header(); ?>
 <div id="main_container" class="container-fluid" style="margin-top: 5rem;">
-    <div class="container mb-5">
+    <div class="container-fluid mb-5">
         <div class="row">
             <div class="col-12">
                 <section id="hero_container">
@@ -21,9 +21,9 @@ get_header(); ?>
                         ?>
                             <div class="hero_slider">
                                 <?php
-                                $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), array(1200, 600));
+                                $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
                                 if ($imgPath) { ?>
-                                    <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid">
+                                    <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid" height="600px" width="300px">
                                 <?php } else { ?>
                                     <img src="http://localhost/wp_playground/wp-content/uploads/2022/12/infected_leaf_close_shot-min.png" alt="" srcset="" class="img-fluid" width="100%">
                                 <?php }
