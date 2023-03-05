@@ -6,8 +6,8 @@
 get_header(); ?>
 <div id="main_container" class="container-fluid" style="margin-top: 5rem;">
     <div class="container-fluid mb-5">
-        <div class="row">
-            <div class="col-12">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-11 col-md-11 col-lg-10">
                 <section id="hero_container">
                     <div class="hero">
                         <?php
@@ -20,16 +20,21 @@ get_header(); ?>
                             $carousels->the_post();
                         ?>
                             <div class="hero_slider">
-                                <?php
-                                $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-                                if ($imgPath) { ?>
-                                    <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid" height="600px" width="300px">
-                                <?php } else { ?>
-                                    <img src="http://baagicha.in/wp-content/uploads/2023/03/IMG_6140-min.jpg" alt="" srcset="" class="img-fluid" width="100%">
-                                <?php }
-                                ?>
-                                <a href="<?php echo get_field('url'); ?>" target="_blank"><?php echo get_the_title(); ?></a>
-
+                                <div class="row g-0">
+                                    <div class="col-12 col-sm-12 col-md-7">
+                                        <?php
+                                        $imgPath = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+                                        if ($imgPath) { ?>
+                                            <img src="<?php echo $imgPath[0]; ?>" alt="" srcset="" class="img-fluid" height="600px" width="300px">
+                                        <?php } else { ?>
+                                            <img src="http://baagicha.in/wp-content/uploads/2023/03/IMG_6140-min.jpg" alt="" srcset="" class="img-fluid" width="100%">
+                                        <?php }
+                                        ?>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-5" style="overflow:hidden;">
+                                        <a href="<?php echo get_field('url'); ?>" target="_blank"><?php echo get_the_title(); ?></a>
+                                    </div>
+                                </div>
                             </div>
                         <?php } ?>
                     </div>
@@ -37,7 +42,7 @@ get_header(); ?>
             </div>
         </div>
     </div>
-    <div class="container mb-5">
+    <!-- <div class="container mb-5">
         <div class="row">
             <div class="col-12 g-0">
                 <h2 class="text-center heading_primary">किस्में</h2>
@@ -90,7 +95,7 @@ get_header(); ?>
                 </section>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="container-fluid mb-5" id="blog">
         <div class="row">
             <div class="col-12 g-0">
@@ -154,7 +159,7 @@ get_header(); ?>
                                 <h2>
                                     और देखें
                                 </h2>
-                                <p style="font-size:2rem"> सेब बागवानी से जुडी हुई और जानकारी के लिए कृपया यहाँ क्लिक करें</p>
+                                <p style="font-size:1rem;"> सेब बागवानी से जुडी हुई और जानकारी के लिए कृपया यहाँ क्लिक करें</p>
                             </a>
                         </div>
                     </div>
@@ -165,8 +170,8 @@ get_header(); ?>
     <div class="container mb-5">
         <div class="row">
             <div class="col-12 g-0">
-                <h2 class="text-center heading_primary">बीमारी</h2>
-                <h5 class="text-center heading_tertiary">Latest Apple Varieties Information</h5>
+                <h2 class="text-center heading_primary">बीमारियाँ</h2>
+                <!-- <h5 class="text-center heading_tertiary">Latest Apple Varieties Information</h5> -->
                 <section id="slider_container">
                     <div class="slider">
                         <?php
@@ -215,10 +220,10 @@ get_header(); ?>
                                     <img src="https://picsum.photos/id/23/500/500" alt="" srcset="" class="img-fluid">
                                 </div>
                                 <h3>
-                                    View All
+                                    जल्द अपडेट किया जाएगा
                                 </h3>
                                 <h2>
-                                    View All
+                                    जल्द अपडेट किया जाएगा
                                 </h2>
                             </a>
                         </div>

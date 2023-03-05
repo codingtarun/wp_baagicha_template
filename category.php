@@ -10,9 +10,10 @@ the_post(); // use with the_content.
 <div id="main_container" style="margin-top: 5rem;">
 
     <div class="container mb-5">
-        <h2 class="text-center heading_primary">ब्लॉग </h2>
+        <h2 class="text-center heading_primary">ब्लॉग | <?php single_cat_title(); ?> </h2>
         <div class="container" id="all_categories">
-            <?php include '_inc/partials/_all_categories_list.php'; ?>
+            <?php include '_inc/partials/_all_categories_list.php';
+            ?>
         </div>
         <div class="row">
             <?php
@@ -56,7 +57,8 @@ the_post(); // use with the_content.
                         </p>
                     </a>
                 </div>
-            <?php } ?>
+            <?php }
+            wp_reset_postdata(); ?>
 
             <div class="row mt-5">
                 <div class="col-12">

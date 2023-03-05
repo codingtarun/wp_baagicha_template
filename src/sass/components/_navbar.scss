@@ -4,9 +4,19 @@ ul#custom_link_class {
         & a:link,
         & a:visited {
             text-decoration: none;
-            display: inline-block;
+            //display: inline-block;
             margin: 0 .5rem;
             color: $colorNavbarLinks;
+            font-size: 1.2rem;
         }
     }
+}
+
+li.current_page_item a,
+li.current-menu-item a {
+    color: rgba($colorPrimary, .7) !important;
+    //text-decoration: underline !important;
+    border-bottom: 1px solid rgba($colorPrimary, .7) !important;
+    padding-bottom: .2rem;
+    //font-weight: bold;
 }

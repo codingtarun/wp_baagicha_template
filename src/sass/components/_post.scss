@@ -4,10 +4,11 @@
     & h1 {
         padding: 0.3rem .5rem;
         color: $colorPrimaryHeading;
-        font-size: $fontSizePrimaryHeading;
+        font-size: 1.8rem;
+        //$fontSizeSecondaryHeading;
         //line-height: $lineHeightHeading;
         margin: 0 0 .5rem 0;
-        text-align: justify;
+        //text-align: justify;
     }
 
     & h3 {

@@ -49,11 +49,6 @@ body {
 #schedule table tr {
   font-size: .8rem; }
 
-li.current_page_item a,
-li.current-menu-item a {
-  color: rgba(76, 175, 80, 0.7) !important;
-  border-bottom: 1px solid rgba(76, 175, 80, 0.7) !important; }
-
 #footer {
   background: #17171E;
   padding: 5rem 2rem; }
@@ -89,14 +84,24 @@ li.current-menu-item a {
     #hero_container .hero_slider a:link,
     #hero_container .hero_slider a:visited,
     #hero_container .hero_slider a:active {
-      z-index: 10000;
       text-decoration: none;
       color: #ffffff;
       display: block;
+      width: 100%;
+      height: 100%;
       background-color: rgba(0, 0, 0, 0.9);
-      padding: 2rem;
-      font-size: 1.3rem;
-      text-align: center; }
+      font-size: 1.5rem;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      text-decoration: underline;
+      transition: all .4s ease-in-out; }
+      #hero_container .hero_slider a:link:hover,
+      #hero_container .hero_slider a:visited:hover,
+      #hero_container .hero_slider a:active:hover {
+        transform: scale(1.03); }
     #hero_container .hero_slider .slider_border {
       z-index: 20;
       position: absolute;
@@ -167,7 +172,6 @@ li.current-menu-item a {
       color: black;
       font-size: 1.1rem;
       margin: 0;
-      text-align: justify;
       line-height: 1.4rem; }
     .blog_slider_box--link p {
       color: rgba(0, 0, 0, 0.9);
@@ -197,9 +201,8 @@ li.current-menu-item a {
   .post h1 {
     padding: 0.3rem .5rem;
     color: black;
-    font-size: 2rem;
-    margin: 0 0 .5rem 0;
-    text-align: justify; }
+    font-size: 1.8rem;
+    margin: 0 0 .5rem 0; }
   .post h3 {
     padding: 0 .5rem;
     color: rgba(0, 0, 0, 0.5);
@@ -239,9 +242,15 @@ li.current-menu-item a {
 ul#custom_link_class li a:link,
 ul#custom_link_class li a:visited {
   text-decoration: none;
-  display: inline-block;
   margin: 0 .5rem;
-  color: rgba(0, 0, 0, 0.9); }
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 1.2rem; }
+
+li.current_page_item a,
+li.current-menu-item a {
+  color: rgba(76, 175, 80, 0.7) !important;
+  border-bottom: 1px solid rgba(76, 175, 80, 0.7) !important;
+  padding-bottom: .2rem; }
 
 #all_categories {
   display: block;

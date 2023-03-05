@@ -24,7 +24,7 @@ the_post(); // use with the_content.
             while ($posts->have_posts()) {
                 $posts->the_post();
             ?>
-                <div class="col-6 col-sm-4 col-md-3 blog_slider_box g-0">
+                <div class="col-6 col-sm-3 col-md-3 blog_slider_box g-0">
                     <a href="<?php echo get_permalink(); ?>" class="blog_slider_box--link shadow-sm">
                         <div class="blog_slider_box--link-img mb-2">
                             <?php
@@ -52,7 +52,7 @@ the_post(); // use with the_content.
                         </h2>
                         <h3><?php echo get_the_date(); ?> | Tarun Chauhan</h3>
                         <p>
-                            <?php the_excerpt(); ?>
+                            <?php the_excerpt(__('(more…)')); ?>
                         </p>
                     </a>
                 </div>
